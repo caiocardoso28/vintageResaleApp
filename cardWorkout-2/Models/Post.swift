@@ -13,6 +13,8 @@ struct Post: Identifiable, Hashable {
     let images: [String]
     let creator: String = "photo3" // image string
     let price: String
+    let brand: String
+    let color: String
 }
 
 

@@ -37,7 +37,7 @@ struct ZoomableImageView: UIViewRepresentable {
         
         scrollView.addSubview(imageView)
         scrollView.contentSize = imageView.bounds.size
-        scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
+        scrollView.setContentOffset(CGPoint(x: 0, y: 150), animated: false)
         
         
         

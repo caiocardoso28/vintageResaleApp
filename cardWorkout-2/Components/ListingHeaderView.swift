@@ -16,8 +16,9 @@ struct ListingHeaderView: View {
             
             RoundedRectangle(cornerRadius: 0)
                 .frame(height: 90)
-                .ignoresSafeArea()
+                
                 .foregroundColor(/*@START_MENU_TOKEN@*/Color(hue: 0.28, saturation: 0.032, brightness: 0.231, opacity: 0.53)/*@END_MENU_TOKEN@*/)
+                .ignoresSafeArea()
                     
                     
                     
@@ -51,10 +52,6 @@ struct ListingHeaderView: View {
                         DescriptionView(title: post.title, price: post.price, description: "Item Describe", isDescriptionVisible: $isDescriptionVisible)
                     }
                         
-                        
-                        
-                        
-                    
                     HStack {
                         Text(post.price)
                             

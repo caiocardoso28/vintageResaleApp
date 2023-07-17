@@ -12,23 +12,25 @@ struct ImageContentView: View {
     let photos: [String]
     
     var body: some View {
-        TabView {
-            ForEach(photos, id: \.self) {photo in
-                    ZoomableImageView(image: UIImage(named: photo)!)
-                    .ignoresSafeArea()
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+        ZStack {
+            TabView {
+                ForEach(photos, id: \.self) {photo in
+                        ZoomableImageView(image: UIImage(named: photo)!)
+                        .ignoresSafeArea()
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                }
+                
             }
-            
-        }
-        .tabViewStyle(.page(indexDisplayMode: .never))
-        .indexViewStyle(.page(backgroundDisplayMode: .never))
+            .tabViewStyle(.page(indexDisplayMode: .never))
+            .indexViewStyle(.page(backgroundDisplayMode: .never))
         .ignoresSafeArea()
+        }
         
         
         
